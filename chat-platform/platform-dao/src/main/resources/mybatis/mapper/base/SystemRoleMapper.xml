@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ufoai.platform.mapper.base.SystemRoleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ufoai.platform.entity.SystemRole">
+        <id column="role_id" property="roleId" />
+        <result column="role_name" property="roleName" />
+        <result column="role_sign" property="roleSign" />
+        <result column="status" property="status" />
+        <result column="remark" property="remark" />
+        <result column="creater" property="creater" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="updater" property="updater" />
+        <result column="is_delete" property="isDelete" />
+    </resultMap>
+    <!--查询角色名字并且去重复-->
+    <select id="findAllRoleName" resultType="java.lang.String">
+        SELECT
+        distinct role_name
+        FROM t_system_role
+    </select>
+     <!--通过用户id查询出该用户对应的角色名-->
+    <select id="findRoleNameByUserId" resultType="java.lang.String">
+        select distinct rm.role_name
+        from t_system_role rm
+        left join t_user_role ur
+        on rm.role_id = ur.role_id where ur.user_id
+        = #{userId}
+    </select>
+
+    <!--角色列表查询用于用户增加的时候-->
+    <select id="selectRoleList" resultType="com.ufoai.platform.pojo.base.RoleListRes">
+        SELECT
+         role_id AS  roleId,
+         role_name AS  roleName,
+         role_sign AS  roleSign,
+         status,
+         remark,
+         creater,
+         create_time AS  createTime,
+         update_time  AS  updateTime,
+         updater
+        FROM
+        t_system_role
+        WHERE
+        is_delete = 0
+        ORDER  BY
+        create_time DESC
+    </select>
+     <!--查询所有的角色信息用于前端角色列表展示-->
+    <select id="findAllRole" resultType="com.ufoai.platform.pojo.base.RoleListRes">
+        SELECT
+        role_id AS  roleId,
+        role_name AS  roleName,
+        role_sign AS  roleSign,
+        status,
+        remark,
+        creater,
+        create_time AS  createTime,
+        update_time  AS  updateTime,
+        updater
+        FROM
+        t_system_role
+        WHERE
+        is_delete = 0
+        ORDER  BY
+        create_time DESC
+    </select>
+
+
+    <!--新增角色-->
+     <insert id="addRole" parameterType="com.ufoai.platform.pojo.base.RoleListRes" useGeneratedKeys="true" keyProperty="roleId" keyColumn="role_id">
+      INSERT  INTO `t_system_role` (role_name,role_sign,status,remark,creater,create_time,update_time,updater,is_delete)
+      VALUES(#{roleName},#{roleSign},0,#{remark},#{creater},now(),#{updateTime},#{updater},0)
+     </insert>
+    <!--修改角色信息-->
+      <update id="updateRole" parameterType="com.ufoai.platform.pojo.base.RoleListRes" >
+        UPDATE  t_system_role
+        <set>
+           <if test="roleName!=null and roleName!=''">
+               role_name=#{roleName},
+           </if>
+          <if test="status!=null and status!=''">
+              status=#{status},
+          </if>
+          <if test="isDelete!=null and isDelete !=''">
+             is_delete=#{isDelete},
+          </if>
+           <if test="updateTime!=null and updateTime!=''">
+              update_time=#{updateTime},
+           </if>
+           <if test="updater>0">
+               updater=#{updater}
+            </if>
+        </set>
+           WHERE  role_id =#{roleId}
+      </update>
+      <!--根据roleName查询有没有存在，新增的时候校验-->
+        <select id="findByRoleName" parameterType="java.lang.String" resultType="int">
+            SELECT COUNT(0) FROM `t_system_role` WHERE role_name=#{roleName}
+        </select>
+    <!--根据roleId查询出对应的roleName-->
+    <select id="findUserNameByRoleId" parameterType="java.lang.Long" resultType="java.lang.String">
+          SELECT role_name FROM `t_system_role` WHERE role_id=#{roleId}
+    </select>
+
+    <!--查询权限树数据，角色拥有的权限（回显选中的节点）-->
+    <select id="findRoleAuth" resultType="java.lang.Long" parameterType="java.lang.Long">
+        SELECT DISTINCT
+        sm.menu_id
+        FROM
+        t_system_menu sm
+        LEFT JOIN t_role_menu um ON sm.menu_id = um.menu_id
+        WHERE
+        um.role_id =  #{roleId}
+    </select>
+    <!--查询权限树数据，角色拥有的权限（回显打开的节点）-->
+    <select id="findRoleAuthOpen" resultType="java.lang.Long" parameterType="java.lang.Long">
+        SELECT DISTINCT
+        sm.parent_id
+        FROM
+        t_system_menu sm
+        LEFT JOIN t_role_menu um ON sm.menu_id = um.menu_id
+        WHERE
+        um.role_id =  #{roleId}
+    </select>
+
+</mapper>

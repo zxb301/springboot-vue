@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="platform-common" />
+        <module name="platform-dao" />
+        <module name="platform-interface" />
+        <module name="platform-pojo" />
+        <module name="platform-service" />
+        <module name="platform-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chat-platform" target="1.8" />
+      <module name="platform-common" target="1.8" />
+      <module name="platform-dao" target="1.8" />
+      <module name="platform-interface" target="1.8" />
+      <module name="platform-pojo" target="1.8" />
+      <module name="platform-service" target="1.8" />
+      <module name="platform-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ufoai.platform.mapper.chat.ChatGroupMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ufoai.platform.entity.ChatGroup">
+        <id column="group_id" property="groupId" />
+        <result column="group_name" property="groupName" />
+        <result column="group_icon" property="groupIcon" />
+        <result column="user_id" property="userId" />
+        <result column="admin_id" property="adminId" />
+        <result column="create_id" property="createId" />
+        <result column="create_time" property="createTime" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+</mapper>

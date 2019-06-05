@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ufoai.platform.mapper.base.LogOperateMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ufoai.platform.entity.LogOperate">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="username" property="username" />
+        <result column="operation" property="operation" />
+        <result column="time" property="time" />
+        <result column="method" property="method" />
+        <result column="params" property="params" />
+        <result column="ip" property="ip" />
+        <result column="gmt_create" property="gmtCreate" />
+    </resultMap>
+    <select id="selectLogOperateList" resultType="com.ufoai.platform.pojo.base.LogOperateRes" parameterType="com.ufoai.platform.pojo.base.PageParamReq">
+        SELECT
+        id as id,
+        username as userName,
+        operation ,
+        ip,
+        gmt_create as gmtCreate
+        FROM
+        t_log_operate
+        ORDER BY  gmt_create DESC
+    </select>
+</mapper>

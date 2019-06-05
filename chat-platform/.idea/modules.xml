@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/chat-platform.iml" filepath="$PROJECT_DIR$/chat-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-common/platform-common.iml" filepath="$PROJECT_DIR$/platform-common/platform-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-dao/platform-dao.iml" filepath="$PROJECT_DIR$/platform-dao/platform-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-interface/platform-interface.iml" filepath="$PROJECT_DIR$/platform-interface/platform-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-pojo/platform-pojo.iml" filepath="$PROJECT_DIR$/platform-pojo/platform-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-service/platform-service.iml" filepath="$PROJECT_DIR$/platform-service/platform-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform-web/platform-web.iml" filepath="$PROJECT_DIR$/platform-web/platform-web.iml" />
+    </modules>
+  </component>
+</project>

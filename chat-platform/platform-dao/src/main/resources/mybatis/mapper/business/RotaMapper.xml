@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ufoai.platform.mapper.business.RotaMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ufoai.platform.entity.Rota">
+        <id column="id" property="id" />
+        <result column="sector_id" property="sectorId" />
+        <result column="date" property="date" />
+        <result column="leader" property="leader" />
+        <result column="person" property="person" />
+        <result column="creater" property="creater" />
+        <result column="create_time" property="createTime" />
+        <result column="updater" property="updater" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+    <select id="rotaList" resultType="com.ufoai.platform.pojo.business.RotaBean">
+    SELECT  se.name  as sectorName , ro.id,ro.date ,ro.leader,ro.person,ro.sector_id FROM  t_sector
+    LEFT  JOIN  t_rota as ro on se.id = ro.sector_id WHERE  ro.date = #{date}
+    </select>
+
+
+</mapper>

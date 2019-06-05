@@ -1,0 +1,1621 @@
+2019-04-26 10:59:04 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 19512 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 10:59:04 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 10:59:04 -The following profiles are active: dev
+2019-04-26 10:59:08 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 10:59:08 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 10:59:09 -Finished Spring Data repository scanning in 123ms. Found 0 repository interfaces.
+2019-04-26 10:59:09 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$546c8d96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 10:59:10 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 10:59:10 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 10:59:10 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 10:59:10 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 10:59:10 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 10:59:10 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$a27ec19b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 10:59:10 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 10:59:10 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$9f3b14e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 10:59:10 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$436cb2e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 10:59:11 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 10:59:11 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 10:59:11 -Starting service [Tomcat]
+2019-04-26 10:59:11 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 10:59:11 -Initializing Spring embedded WebApplicationContext
+2019-04-26 10:59:11 -Root WebApplicationContext: initialization completed in 7164 ms
+2019-04-26 10:59:12 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 10:59:12 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 10:59:13 -{dataSource-1} inited
+2019-04-26 10:59:14 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7c541c15, started on Fri Apr 26 10:59:04 GMT+08:00 2019
+2019-04-26 10:59:16 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 10:59:17 -Using default implementation for ThreadExecutor
+2019-04-26 10:59:17 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 10:59:17 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 10:59:17 -RAMJobStore initialized.
+2019-04-26 10:59:17 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 10:59:17 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 10:59:17 -Quartz scheduler version: 2.2.1
+2019-04-26 10:59:17 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@813ab53
+2019-04-26 10:59:17 -Starting Quartz Scheduler now
+2019-04-26 10:59:17 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 10:59:17 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 10:59:17 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 10:59:17 -Started PlatformWebApplication in 14.507 seconds (JVM running for 19.147)
+2019-04-26 10:59:52 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 10:59:52 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 10:59:52 -Completed initialization in 15 ms
+2019-04-26 10:59:53 -Enabling session validation scheduler...
+2019-04-26 10:59:53 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 10:59:53 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 10:59:53 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 10:59:53 -<==      Total: 1
+2019-04-26 10:59:53 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:00:19 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:00:19 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:00:19 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:00:19 -<==      Total: 1
+2019-04-26 11:00:19 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:00:33 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:00:33 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:00:33 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:00:33 -<==      Total: 1
+2019-04-26 11:00:33 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:00:55 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 8832 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 11:00:55 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 11:00:55 -The following profiles are active: dev
+2019-04-26 11:00:57 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 11:00:57 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 11:00:57 -Finished Spring Data repository scanning in 55ms. Found 0 repository interfaces.
+2019-04-26 11:00:57 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$7c352201] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:00:57 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:00:57 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:00:57 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:00:57 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:00:57 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:00:57 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$ca475606] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:00:57 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:00:57 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$c703a94b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:00:58 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6b35474f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:00:58 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 11:00:58 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:00:58 -Starting service [Tomcat]
+2019-04-26 11:00:58 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 11:00:58 -Initializing Spring embedded WebApplicationContext
+2019-04-26 11:00:58 -Root WebApplicationContext: initialization completed in 2982 ms
+2019-04-26 11:00:59 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 11:00:59 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 11:00:59 -{dataSource-1} inited
+2019-04-26 11:01:00 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@72758afa, started on Fri Apr 26 11:00:55 GMT+08:00 2019
+2019-04-26 11:01:01 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 11:01:02 -Using default implementation for ThreadExecutor
+2019-04-26 11:01:02 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 11:01:02 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 11:01:02 -RAMJobStore initialized.
+2019-04-26 11:01:02 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 11:01:02 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 11:01:02 -Quartz scheduler version: 2.2.1
+2019-04-26 11:01:02 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@776d8097
+2019-04-26 11:01:02 -Starting Quartz Scheduler now
+2019-04-26 11:01:02 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 11:01:02 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:01:02 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 11:01:02 -Started PlatformWebApplication in 7.756 seconds (JVM running for 9.368)
+2019-04-26 11:01:15 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 11:01:15 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 11:01:15 -Completed initialization in 16 ms
+2019-04-26 11:01:15 -Enabling session validation scheduler...
+2019-04-26 11:01:15 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:01:15 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:01:15 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:01:15 -<==      Total: 1
+2019-04-26 11:01:15 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:01:25 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:01:25 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:01:25 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:01:25 -<==      Total: 1
+2019-04-26 11:01:25 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:02:31 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:02:31 -==> Parameters: 
+2019-04-26 11:02:31 -<==      Total: 8
+2019-04-26 11:29:41 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 5636 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 11:29:41 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 11:29:41 -The following profiles are active: dev
+2019-04-26 11:29:42 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 11:29:42 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 11:29:42 -Finished Spring Data repository scanning in 51ms. Found 0 repository interfaces.
+2019-04-26 11:29:43 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$226664d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:29:43 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:29:43 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:29:43 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:29:43 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:29:43 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:29:43 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$707898dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:29:43 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:29:43 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$6d34ec21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:29:44 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11668a25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:29:45 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 11:29:45 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:29:45 -Starting service [Tomcat]
+2019-04-26 11:29:45 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 11:29:45 -Initializing Spring embedded WebApplicationContext
+2019-04-26 11:29:45 -Root WebApplicationContext: initialization completed in 3606 ms
+2019-04-26 11:29:45 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 11:29:45 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 11:29:46 -{dataSource-1} inited
+2019-04-26 11:29:46 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5911e990, started on Fri Apr 26 11:29:41 GMT+08:00 2019
+2019-04-26 11:29:48 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 11:29:48 -Using default implementation for ThreadExecutor
+2019-04-26 11:29:48 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 11:29:48 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 11:29:48 -RAMJobStore initialized.
+2019-04-26 11:29:48 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 11:29:48 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 11:29:48 -Quartz scheduler version: 2.2.1
+2019-04-26 11:29:48 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4a5fab78
+2019-04-26 11:29:48 -Starting Quartz Scheduler now
+2019-04-26 11:29:48 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 11:29:48 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:29:49 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 11:29:49 -Started PlatformWebApplication in 8.274 seconds (JVM running for 10.404)
+2019-04-26 11:30:23 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 11:30:23 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 11:30:23 -Completed initialization in 14 ms
+2019-04-26 11:30:23 -Enabling session validation scheduler...
+2019-04-26 11:30:23 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:30:23 -==> Parameters: 
+2019-04-26 11:30:23 -<==      Total: 8
+2019-04-26 11:30:26 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:30:26 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:30:26 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:30:26 -<==      Total: 1
+2019-04-26 11:30:26 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:30:26 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [org.apache.shiro.session.ExpiredSessionException: Session with id [ad23ed02-c407-40ce-a30b-46ae6f0103e0] has expired. Last access time: 19-4-26 上午11:30.  Current time: 19-4-26 上午11:30.  Session timeout is set to 0 seconds (0 minutes)] with root cause
+org.apache.shiro.session.ExpiredSessionException: Session with id [ad23ed02-c407-40ce-a30b-46ae6f0103e0] has expired. Last access time: 19-4-26 上午11:30.  Current time: 19-4-26 上午11:30.  Session timeout is set to 0 seconds (0 minutes)
+	at org.apache.shiro.session.mgt.SimpleSession.validate(SimpleSession.java:292)
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.doValidate(AbstractValidatingSessionManager.java:186)
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.validate(AbstractValidatingSessionManager.java:143)
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.doGetSession(AbstractValidatingSessionManager.java:120)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.lookupSession(AbstractNativeSessionManager.java:148)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.lookupRequiredSession(AbstractNativeSessionManager.java:152)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.getAttribute(AbstractNativeSessionManager.java:249)
+	at org.apache.shiro.session.mgt.DelegatingSession.getAttribute(DelegatingSession.java:141)
+	at org.apache.shiro.session.ProxiedSession.getAttribute(ProxiedSession.java:121)
+	at org.apache.shiro.session.ProxiedSession.getAttribute(ProxiedSession.java:121)
+	at org.apache.shiro.subject.support.DelegatingSubject.getRunAsPrincipalsStack(DelegatingSubject.java:469)
+	at org.apache.shiro.subject.support.DelegatingSubject.getPrincipals(DelegatingSubject.java:153)
+	at org.apache.shiro.subject.support.DelegatingSubject.getPrincipal(DelegatingSubject.java:149)
+	at org.apache.shiro.web.servlet.ShiroHttpServletRequest.getSubjectPrincipal(ShiroHttpServletRequest.java:96)
+	at org.apache.shiro.web.servlet.ShiroHttpServletRequest.getUserPrincipal(ShiroHttpServletRequest.java:112)
+	at org.springframework.web.servlet.FrameworkServlet.getUsernameForRequest(FrameworkServlet.java:1159)
+	at org.springframework.web.servlet.FrameworkServlet.publishRequestHandledEvent(FrameworkServlet.java:1144)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.ufoai.platform.filter.MyLoginFilter.doFilter(MyLoginFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.ufoai.platform.filter.MyLoginFilter.doFilter(MyLoginFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-26 11:30:28 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:30:28 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:30:28 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:30:28 -<==      Total: 1
+2019-04-26 11:30:28 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:30:29 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:30:29 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:30:29 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:30:29 -<==      Total: 1
+2019-04-26 11:30:29 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:30:29 -Session with id [b31a634d-ff61-4bf0-b0c7-5d94ce7f681f] has expired. Last access time: 19-4-26 上午11:30.  Current time: 19-4-26 上午11:30.  Session timeout is set to 0 seconds (0 minutes)
+2019-04-26 11:30:29 -org.apache.shiro.session.ExpiredSessionException: Session with id [b31a634d-ff61-4bf0-b0c7-5d94ce7f681f] has expired. Last access time: 19-4-26 上午11:30.  Current time: 19-4-26 上午11:30.  Session timeout is set to 0 seconds (0 minutes)
+2019-04-26 11:30:29 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [org.apache.shiro.session.StoppedSessionException: Session with id [b31a634d-ff61-4bf0-b0c7-5d94ce7f681f] has been explicitly stopped.  No further interaction under this session is allowed.] with root cause
+org.apache.shiro.session.StoppedSessionException: Session with id [b31a634d-ff61-4bf0-b0c7-5d94ce7f681f] has been explicitly stopped.  No further interaction under this session is allowed.
+	at org.apache.shiro.session.mgt.SimpleSession.validate(SimpleSession.java:270)
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.doValidate(AbstractValidatingSessionManager.java:186)
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.validate(AbstractValidatingSessionManager.java:143)
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.doGetSession(AbstractValidatingSessionManager.java:120)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.lookupSession(AbstractNativeSessionManager.java:148)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.lookupRequiredSession(AbstractNativeSessionManager.java:152)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.getAttribute(AbstractNativeSessionManager.java:249)
+	at org.apache.shiro.session.mgt.DelegatingSession.getAttribute(DelegatingSession.java:141)
+	at org.apache.shiro.session.ProxiedSession.getAttribute(ProxiedSession.java:121)
+	at org.apache.shiro.session.ProxiedSession.getAttribute(ProxiedSession.java:121)
+	at org.apache.shiro.subject.support.DelegatingSubject.getRunAsPrincipalsStack(DelegatingSubject.java:469)
+	at org.apache.shiro.subject.support.DelegatingSubject.getPrincipals(DelegatingSubject.java:153)
+	at org.apache.shiro.subject.support.DelegatingSubject.getPrincipal(DelegatingSubject.java:149)
+	at org.apache.shiro.web.servlet.ShiroHttpServletRequest.getSubjectPrincipal(ShiroHttpServletRequest.java:96)
+	at org.apache.shiro.web.servlet.ShiroHttpServletRequest.getUserPrincipal(ShiroHttpServletRequest.java:112)
+	at org.springframework.web.servlet.FrameworkServlet.getUsernameForRequest(FrameworkServlet.java:1159)
+	at org.springframework.web.servlet.FrameworkServlet.publishRequestHandledEvent(FrameworkServlet.java:1144)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.ufoai.platform.filter.MyLoginFilter.doFilter(MyLoginFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.ufoai.platform.filter.MyLoginFilter.doFilter(MyLoginFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-26 11:30:30 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:30:30 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:30:30 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:30:30 -<==      Total: 1
+2019-04-26 11:30:30 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:30:31 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:30:31 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:30:31 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:30:31 -<==      Total: 1
+2019-04-26 11:30:31 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:30:31 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:30:31 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:30:31 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:30:31 -<==      Total: 1
+2019-04-26 11:30:31 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:30:32 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:30:32 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:30:32 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:30:32 -<==      Total: 1
+2019-04-26 11:30:32 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:30:33 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:30:33 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:30:33 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:30:33 -<==      Total: 1
+2019-04-26 11:30:33 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:30:34 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:30:34 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:30:34 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:30:34 -<==      Total: 1
+2019-04-26 11:30:34 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:30:34 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:30:34 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:30:34 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:30:34 -<==      Total: 1
+2019-04-26 11:30:34 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:30:35 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:30:35 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:30:35 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:30:35 -<==      Total: 1
+2019-04-26 11:30:35 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:31:03 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 12916 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 11:31:03 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 11:31:03 -The following profiles are active: dev
+2019-04-26 11:31:04 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 11:31:04 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 11:31:04 -Finished Spring Data repository scanning in 51ms. Found 0 repository interfaces.
+2019-04-26 11:31:05 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$9121af2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:05 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:05 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:05 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:05 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:05 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:05 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$df33e32f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:05 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:05 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$dbf03674] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:06 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8021d478] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:06 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 11:31:06 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:31:06 -Starting service [Tomcat]
+2019-04-26 11:31:06 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 11:31:06 -Initializing Spring embedded WebApplicationContext
+2019-04-26 11:31:06 -Root WebApplicationContext: initialization completed in 2897 ms
+2019-04-26 11:31:07 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 11:31:07 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 11:31:07 -{dataSource-1} inited
+2019-04-26 11:31:08 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@24d4d7c9, started on Fri Apr 26 11:31:03 GMT+08:00 2019
+2019-04-26 11:31:09 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 11:31:10 -Using default implementation for ThreadExecutor
+2019-04-26 11:31:10 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 11:31:10 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 11:31:10 -RAMJobStore initialized.
+2019-04-26 11:31:10 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 11:31:10 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 11:31:10 -Quartz scheduler version: 2.2.1
+2019-04-26 11:31:10 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@18f4086e
+2019-04-26 11:31:10 -Starting Quartz Scheduler now
+2019-04-26 11:31:10 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 11:31:10 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:31:10 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 11:31:10 -Started PlatformWebApplication in 7.608 seconds (JVM running for 9.234)
+2019-04-26 11:31:29 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 14020 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 11:31:29 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 11:31:29 -The following profiles are active: dev
+2019-04-26 11:31:30 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 11:31:30 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 11:31:30 -Finished Spring Data repository scanning in 53ms. Found 0 repository interfaces.
+2019-04-26 11:31:31 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$cd471fc1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:31 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:31 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:31 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:31 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:31 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:31 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$1b5953c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:31 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:31 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$1815a70b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:31 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bc47450f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:31:32 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 11:31:32 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:31:32 -Starting service [Tomcat]
+2019-04-26 11:31:32 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 11:31:32 -Initializing Spring embedded WebApplicationContext
+2019-04-26 11:31:32 -Root WebApplicationContext: initialization completed in 2876 ms
+2019-04-26 11:31:32 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 11:31:32 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 11:31:33 -{dataSource-1} inited
+2019-04-26 11:31:33 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@320de594, started on Fri Apr 26 11:31:29 GMT+08:00 2019
+2019-04-26 11:31:35 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 11:31:36 -Using default implementation for ThreadExecutor
+2019-04-26 11:31:36 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 11:31:36 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 11:31:36 -RAMJobStore initialized.
+2019-04-26 11:31:36 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 11:31:36 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 11:31:36 -Quartz scheduler version: 2.2.1
+2019-04-26 11:31:36 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6dbeaef8
+2019-04-26 11:31:36 -Starting Quartz Scheduler now
+2019-04-26 11:31:36 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 11:31:36 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:31:36 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 11:31:36 -Started PlatformWebApplication in 7.5 seconds (JVM running for 8.94)
+2019-04-26 11:31:56 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 11:31:56 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 11:31:56 -Completed initialization in 15 ms
+2019-04-26 11:31:56 -Enabling session validation scheduler...
+2019-04-26 11:31:56 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:31:56 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:31:56 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:31:56 -<==      Total: 1
+2019-04-26 11:31:56 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:32:24 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:32:24 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:32:24 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:32:24 -<==      Total: 1
+2019-04-26 11:32:24 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:33:08 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:33:08 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:33:08 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:33:08 -<==      Total: 1
+2019-04-26 11:33:08 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:33:42 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:33:42 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:33:42 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:33:42 -<==      Total: 1
+2019-04-26 11:33:42 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:33:43 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:33:43 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:33:43 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:33:43 -<==      Total: 1
+2019-04-26 11:33:43 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:34:55 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 9756 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 11:34:55 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 11:34:55 -The following profiles are active: dev
+2019-04-26 11:34:56 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 11:34:56 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 11:34:56 -Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2019-04-26 11:34:56 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$acc25c65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:34:57 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:34:57 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:34:57 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:34:57 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:34:57 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:34:57 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$fad4906a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:34:57 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:34:57 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$f790e3af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:34:57 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9bc281b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:34:57 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 11:34:57 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:34:57 -Starting service [Tomcat]
+2019-04-26 11:34:57 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 11:34:58 -Initializing Spring embedded WebApplicationContext
+2019-04-26 11:34:58 -Root WebApplicationContext: initialization completed in 2840 ms
+2019-04-26 11:34:58 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 11:34:58 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 11:34:58 -{dataSource-1} inited
+2019-04-26 11:34:59 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a6f2de3, started on Fri Apr 26 11:34:55 GMT+08:00 2019
+2019-04-26 11:35:00 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 11:35:01 -Using default implementation for ThreadExecutor
+2019-04-26 11:35:01 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 11:35:01 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 11:35:01 -RAMJobStore initialized.
+2019-04-26 11:35:01 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 11:35:01 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 11:35:01 -Quartz scheduler version: 2.2.1
+2019-04-26 11:35:01 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@338270ea
+2019-04-26 11:35:01 -Starting Quartz Scheduler now
+2019-04-26 11:35:01 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 11:35:01 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:35:01 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 11:35:01 -Started PlatformWebApplication in 7.311 seconds (JVM running for 8.943)
+2019-04-26 11:35:20 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 11:35:20 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 11:35:20 -Completed initialization in 15 ms
+2019-04-26 11:35:20 -Enabling session validation scheduler...
+2019-04-26 11:35:20 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:35:21 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:35:21 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:35:21 -<==      Total: 1
+2019-04-26 11:35:21 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:35:30 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:35:30 -==> Parameters: 
+2019-04-26 11:35:30 -<==      Total: 8
+2019-04-26 11:35:32 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:35:32 -==> Parameters: 
+2019-04-26 11:35:32 -<==      Total: 8
+2019-04-26 11:35:33 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:35:33 -==> Parameters: 
+2019-04-26 11:35:33 -<==      Total: 8
+2019-04-26 11:35:33 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:35:33 -==> Parameters: 
+2019-04-26 11:35:33 -<==      Total: 8
+2019-04-26 11:35:34 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:35:34 -==> Parameters: 
+2019-04-26 11:35:34 -<==      Total: 8
+2019-04-26 11:35:34 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:35:34 -==> Parameters: 
+2019-04-26 11:35:34 -<==      Total: 8
+2019-04-26 11:35:34 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:35:34 -==> Parameters: 
+2019-04-26 11:35:34 -<==      Total: 8
+2019-04-26 11:35:35 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:35:35 -==> Parameters: 
+2019-04-26 11:35:35 -<==      Total: 8
+2019-04-26 11:36:57 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:36:57 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:36:57 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:36:57 -<==      Total: 1
+2019-04-26 11:36:57 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:39:00 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:39:00 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:39:00 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:39:00 -<==      Total: 1
+2019-04-26 11:39:00 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:39:02 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:39:02 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:39:02 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:39:02 -<==      Total: 1
+2019-04-26 11:39:02 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:39:19 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:19 -==> Parameters: 
+2019-04-26 11:39:19 -<==      Total: 8
+2019-04-26 11:39:33 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:33 -==> Parameters: 
+2019-04-26 11:39:33 -<==      Total: 8
+2019-04-26 11:39:34 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:34 -==> Parameters: 
+2019-04-26 11:39:34 -<==      Total: 8
+2019-04-26 11:39:35 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:35 -==> Parameters: 
+2019-04-26 11:39:35 -<==      Total: 8
+2019-04-26 11:39:36 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:36 -==> Parameters: 
+2019-04-26 11:39:36 -<==      Total: 8
+2019-04-26 11:39:36 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:36 -==> Parameters: 
+2019-04-26 11:39:36 -<==      Total: 8
+2019-04-26 11:39:38 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:38 -==> Parameters: 
+2019-04-26 11:39:38 -<==      Total: 8
+2019-04-26 11:39:38 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:38 -==> Parameters: 
+2019-04-26 11:39:38 -<==      Total: 8
+2019-04-26 11:39:39 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:39 -==> Parameters: 
+2019-04-26 11:39:39 -<==      Total: 8
+2019-04-26 11:39:40 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:40 -==> Parameters: 
+2019-04-26 11:39:40 -<==      Total: 8
+2019-04-26 11:39:40 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:40 -==> Parameters: 
+2019-04-26 11:39:40 -<==      Total: 8
+2019-04-26 11:39:41 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:41 -==> Parameters: 
+2019-04-26 11:39:41 -<==      Total: 8
+2019-04-26 11:39:59 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:39:59 -==> Parameters: 
+2019-04-26 11:39:59 -<==      Total: 8
+2019-04-26 11:40:00 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:40:00 -==> Parameters: 
+2019-04-26 11:40:00 -<==      Total: 8
+2019-04-26 11:40:01 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:40:01 -==> Parameters: 
+2019-04-26 11:40:01 -<==      Total: 8
+2019-04-26 11:40:31 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:40:31 -==> Parameters: 
+2019-04-26 11:40:31 -<==      Total: 8
+2019-04-26 11:40:32 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:40:32 -==> Parameters: 
+2019-04-26 11:40:32 -<==      Total: 8
+2019-04-26 11:40:33 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:40:33 -==> Parameters: 
+2019-04-26 11:40:33 -<==      Total: 8
+2019-04-26 11:40:33 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:40:33 -==> Parameters: 
+2019-04-26 11:40:33 -<==      Total: 8
+2019-04-26 11:40:34 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:40:34 -==> Parameters: 
+2019-04-26 11:40:34 -<==      Total: 8
+2019-04-26 11:40:35 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:40:35 -==> Parameters: 
+2019-04-26 11:40:35 -<==      Total: 8
+2019-04-26 11:40:35 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:40:35 -==> Parameters: 
+2019-04-26 11:40:35 -<==      Total: 8
+2019-04-26 11:42:22 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:42:22 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:42:22 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:42:22 -<==      Total: 1
+2019-04-26 11:42:22 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:42:28 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:42:28 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:42:28 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:42:28 -<==      Total: 1
+2019-04-26 11:42:28 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:43:33 -Session with id [959d8d5d-b7c9-4206-a6f4-bf8ed409fa0f] has expired. Last access time: 19-4-26 上午11:42.  Current time: 19-4-26 上午11:43.  Session timeout is set to 50 seconds (0 minutes)
+2019-04-26 11:43:33 -org.apache.shiro.session.ExpiredSessionException: Session with id [959d8d5d-b7c9-4206-a6f4-bf8ed409fa0f] has expired. Last access time: 19-4-26 上午11:42.  Current time: 19-4-26 上午11:43.  Session timeout is set to 50 seconds (0 minutes)
+2019-04-26 11:43:33 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [org.apache.shiro.session.StoppedSessionException: Session with id [959d8d5d-b7c9-4206-a6f4-bf8ed409fa0f] has been explicitly stopped.  No further interaction under this session is allowed.] with root cause
+org.apache.shiro.session.StoppedSessionException: Session with id [959d8d5d-b7c9-4206-a6f4-bf8ed409fa0f] has been explicitly stopped.  No further interaction under this session is allowed.
+	at org.apache.shiro.session.mgt.SimpleSession.validate(SimpleSession.java:270)
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.doValidate(AbstractValidatingSessionManager.java:186)
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.validate(AbstractValidatingSessionManager.java:143)
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.doGetSession(AbstractValidatingSessionManager.java:120)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.lookupSession(AbstractNativeSessionManager.java:148)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.lookupRequiredSession(AbstractNativeSessionManager.java:152)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.getAttribute(AbstractNativeSessionManager.java:249)
+	at org.apache.shiro.session.mgt.DelegatingSession.getAttribute(DelegatingSession.java:141)
+	at org.apache.shiro.session.ProxiedSession.getAttribute(ProxiedSession.java:121)
+	at org.apache.shiro.session.ProxiedSession.getAttribute(ProxiedSession.java:121)
+	at org.apache.shiro.subject.support.DelegatingSubject.getRunAsPrincipalsStack(DelegatingSubject.java:469)
+	at org.apache.shiro.subject.support.DelegatingSubject.getPrincipals(DelegatingSubject.java:153)
+	at org.apache.shiro.subject.support.DelegatingSubject.getPrincipal(DelegatingSubject.java:149)
+	at org.apache.shiro.web.servlet.ShiroHttpServletRequest.getSubjectPrincipal(ShiroHttpServletRequest.java:96)
+	at org.apache.shiro.web.servlet.ShiroHttpServletRequest.getUserPrincipal(ShiroHttpServletRequest.java:112)
+	at org.springframework.web.servlet.FrameworkServlet.getUsernameForRequest(FrameworkServlet.java:1159)
+	at org.springframework.web.servlet.FrameworkServlet.publishRequestHandledEvent(FrameworkServlet.java:1144)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.ufoai.platform.filter.MyLoginFilter.doFilter(MyLoginFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.ufoai.platform.filter.MyLoginFilter.doFilter(MyLoginFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-26 11:43:53 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 18748 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 11:43:53 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 11:43:53 -The following profiles are active: dev
+2019-04-26 11:43:54 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 11:43:54 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 11:43:54 -Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2019-04-26 11:43:54 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$7e67b654] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:43:55 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:43:55 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:43:55 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:43:55 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:43:55 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:43:55 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$cc79ea59] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:43:55 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:43:55 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$c9363d9e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:43:55 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6d67dba2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:43:56 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 11:43:56 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:43:56 -Starting service [Tomcat]
+2019-04-26 11:43:56 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 11:43:56 -Initializing Spring embedded WebApplicationContext
+2019-04-26 11:43:56 -Root WebApplicationContext: initialization completed in 2818 ms
+2019-04-26 11:43:56 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 11:43:56 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 11:43:57 -{dataSource-1} inited
+2019-04-26 11:43:57 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c7fd41f, started on Fri Apr 26 11:43:53 GMT+08:00 2019
+2019-04-26 11:43:59 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 11:43:59 -Using default implementation for ThreadExecutor
+2019-04-26 11:43:59 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 11:43:59 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 11:43:59 -RAMJobStore initialized.
+2019-04-26 11:43:59 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 11:43:59 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 11:43:59 -Quartz scheduler version: 2.2.1
+2019-04-26 11:43:59 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@776d8097
+2019-04-26 11:43:59 -Starting Quartz Scheduler now
+2019-04-26 11:43:59 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 11:43:59 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:43:59 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 11:43:59 -Started PlatformWebApplication in 7.542 seconds (JVM running for 9.167)
+2019-04-26 11:45:35 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 11:45:35 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 11:45:35 -Completed initialization in 16 ms
+2019-04-26 11:45:35 -Enabling session validation scheduler...
+2019-04-26 11:45:35 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:45:35 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:45:35 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:45:35 -<==      Total: 1
+2019-04-26 11:45:35 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:45:59 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:45:59 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:45:59 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:45:59 -<==      Total: 1
+2019-04-26 11:45:59 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:47:16 -Session with id [06636c67-d7f4-40ce-971f-848c8bd62278] has expired. Last access time: 19-4-26 上午11:45.  Current time: 19-4-26 上午11:47.  Session timeout is set to 50 seconds (0 minutes)
+2019-04-26 11:47:16 -org.apache.shiro.session.ExpiredSessionException: Session with id [06636c67-d7f4-40ce-971f-848c8bd62278] has expired. Last access time: 19-4-26 上午11:45.  Current time: 19-4-26 上午11:47.  Session timeout is set to 50 seconds (0 minutes)
+2019-04-26 11:47:16 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [org.apache.shiro.session.UnknownSessionException: There is no session with id [06636c67-d7f4-40ce-971f-848c8bd62278]] with root cause
+org.apache.shiro.session.UnknownSessionException: There is no session with id [06636c67-d7f4-40ce-971f-848c8bd62278]
+	at org.apache.shiro.session.mgt.eis.AbstractSessionDAO.readSession(AbstractSessionDAO.java:170)
+	at org.apache.shiro.session.mgt.DefaultSessionManager.retrieveSessionFromDataSource(DefaultSessionManager.java:236)
+	at org.apache.shiro.session.mgt.DefaultSessionManager.retrieveSession(DefaultSessionManager.java:222)
+	at org.apache.shiro.session.mgt.AbstractValidatingSessionManager.doGetSession(AbstractValidatingSessionManager.java:118)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.lookupSession(AbstractNativeSessionManager.java:148)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.lookupRequiredSession(AbstractNativeSessionManager.java:152)
+	at org.apache.shiro.session.mgt.AbstractNativeSessionManager.getAttribute(AbstractNativeSessionManager.java:249)
+	at org.apache.shiro.session.mgt.DelegatingSession.getAttribute(DelegatingSession.java:141)
+	at org.apache.shiro.session.ProxiedSession.getAttribute(ProxiedSession.java:121)
+	at org.apache.shiro.session.ProxiedSession.getAttribute(ProxiedSession.java:121)
+	at org.apache.shiro.subject.support.DelegatingSubject.getRunAsPrincipalsStack(DelegatingSubject.java:469)
+	at org.apache.shiro.subject.support.DelegatingSubject.getPrincipals(DelegatingSubject.java:153)
+	at org.apache.shiro.subject.support.DelegatingSubject.getPrincipal(DelegatingSubject.java:149)
+	at org.apache.shiro.web.servlet.ShiroHttpServletRequest.getSubjectPrincipal(ShiroHttpServletRequest.java:96)
+	at org.apache.shiro.web.servlet.ShiroHttpServletRequest.getUserPrincipal(ShiroHttpServletRequest.java:112)
+	at org.springframework.web.servlet.FrameworkServlet.getUsernameForRequest(FrameworkServlet.java:1159)
+	at org.springframework.web.servlet.FrameworkServlet.publishRequestHandledEvent(FrameworkServlet.java:1144)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.ufoai.platform.filter.MyLoginFilter.doFilter(MyLoginFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.ufoai.platform.filter.MyLoginFilter.doFilter(MyLoginFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-26 11:47:23 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:47:23 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:47:23 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:47:23 -<==      Total: 1
+2019-04-26 11:47:23 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:48:23 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:48:23 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:48:23 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:48:23 -<==      Total: 1
+2019-04-26 11:48:23 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:48:54 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:48:54 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:48:54 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:48:54 -<==      Total: 1
+2019-04-26 11:48:54 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:52:11 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 10908 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 11:52:11 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 11:52:11 -The following profiles are active: dev
+2019-04-26 11:52:12 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 11:52:12 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 11:52:12 -Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2019-04-26 11:52:12 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$caa8292b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:52:13 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:52:13 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:52:13 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:52:13 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:52:13 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:52:13 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$18ba5d30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:52:13 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:52:13 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$1576b075] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:52:13 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b9a84e79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 11:52:14 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 11:52:14 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:52:14 -Starting service [Tomcat]
+2019-04-26 11:52:14 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 11:52:14 -Initializing Spring embedded WebApplicationContext
+2019-04-26 11:52:14 -Root WebApplicationContext: initialization completed in 2952 ms
+2019-04-26 11:52:14 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 11:52:14 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 11:52:15 -{dataSource-1} inited
+2019-04-26 11:52:15 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75f5fd58, started on Fri Apr 26 11:52:11 GMT+08:00 2019
+2019-04-26 11:52:17 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 11:52:18 -Using default implementation for ThreadExecutor
+2019-04-26 11:52:18 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 11:52:18 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 11:52:18 -RAMJobStore initialized.
+2019-04-26 11:52:18 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 11:52:18 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 11:52:18 -Quartz scheduler version: 2.2.1
+2019-04-26 11:52:18 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2d705998
+2019-04-26 11:52:18 -Starting Quartz Scheduler now
+2019-04-26 11:52:18 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 11:52:18 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 11:52:18 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 11:52:18 -Started PlatformWebApplication in 7.427 seconds (JVM running for 9.122)
+2019-04-26 11:52:40 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 11:52:40 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 11:52:40 -Completed initialization in 14 ms
+2019-04-26 11:52:40 -Enabling session validation scheduler...
+2019-04-26 11:52:40 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:52:40 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:52:40 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:52:40 -<==      Total: 1
+2019-04-26 11:52:40 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:52:46 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:52:46 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:52:46 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:52:46 -<==      Total: 1
+2019-04-26 11:52:46 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:54:12 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:54:12 -==> Parameters: 
+2019-04-26 11:54:12 -<==      Total: 8
+2019-04-26 11:54:28 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:54:28 -==> Parameters: 
+2019-04-26 11:54:28 -<==      Total: 8
+2019-04-26 11:54:39 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 11:54:39 -==> Parameters: 
+2019-04-26 11:54:39 -<==      Total: 8
+2019-04-26 11:55:06 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:55:06 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:55:06 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:55:06 -<==      Total: 1
+2019-04-26 11:55:06 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:55:15 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:55:15 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:55:15 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:55:15 -<==      Total: 1
+2019-04-26 11:55:15 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:55:25 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:55:25 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:55:25 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:55:25 -<==      Total: 1
+2019-04-26 11:55:25 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:59:06 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:59:06 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:59:06 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:59:06 -<==      Total: 1
+2019-04-26 11:59:06 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:59:15 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:59:15 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:59:15 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:59:15 -<==      Total: 1
+2019-04-26 11:59:15 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 11:59:59 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 11:59:59 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 11:59:59 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 11:59:59 -<==      Total: 1
+2019-04-26 11:59:59 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:00:33 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:00:33 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:00:33 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:00:33 -<==      Total: 1
+2019-04-26 12:00:33 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:00:39 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:00:39 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:00:39 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:00:39 -<==      Total: 1
+2019-04-26 12:00:39 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:00:40 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:00:40 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:00:40 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:00:40 -<==      Total: 1
+2019-04-26 12:00:40 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:00:41 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:00:41 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:00:41 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:00:41 -<==      Total: 1
+2019-04-26 12:00:41 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:00:42 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:00:42 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:00:42 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:00:42 -<==      Total: 1
+2019-04-26 12:00:42 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:00:43 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:00:43 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:00:43 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:00:43 -<==      Total: 1
+2019-04-26 12:00:43 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:03:12 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:03:12 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:03:12 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:03:12 -<==      Total: 1
+2019-04-26 12:03:12 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:05:00 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:05:00 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:05:00 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:05:00 -<==      Total: 1
+2019-04-26 12:05:00 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:12:57 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:12:57 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:12:57 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:12:57 -<==      Total: 1
+2019-04-26 12:12:57 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:13:00 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:13:00 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:13:00 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:13:00 -<==      Total: 1
+2019-04-26 12:13:00 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:14:22 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:14:22 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:14:22 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:14:22 -<==      Total: 1
+2019-04-26 12:14:22 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:14:29 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:14:29 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:14:29 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:14:29 -<==      Total: 1
+2019-04-26 12:14:29 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:14:35 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:14:35 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:14:35 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:14:35 -<==      Total: 1
+2019-04-26 12:14:35 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:14:38 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:14:38 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:14:38 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:14:38 -<==      Total: 1
+2019-04-26 12:14:38 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:14:56 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:14:56 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:14:56 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:14:56 -<==      Total: 1
+2019-04-26 12:14:56 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:15:34 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:34 -==> Parameters: 
+2019-04-26 12:15:34 -<==      Total: 8
+2019-04-26 12:15:43 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:43 -==> Parameters: 
+2019-04-26 12:15:43 -<==      Total: 8
+2019-04-26 12:15:44 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:44 -==> Parameters: 
+2019-04-26 12:15:44 -<==      Total: 8
+2019-04-26 12:15:44 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:44 -==> Parameters: 
+2019-04-26 12:15:44 -<==      Total: 8
+2019-04-26 12:15:45 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:45 -==> Parameters: 
+2019-04-26 12:15:45 -<==      Total: 8
+2019-04-26 12:15:45 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:45 -==> Parameters: 
+2019-04-26 12:15:45 -<==      Total: 8
+2019-04-26 12:15:45 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:45 -==> Parameters: 
+2019-04-26 12:15:45 -<==      Total: 8
+2019-04-26 12:15:45 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:45 -==> Parameters: 
+2019-04-26 12:15:45 -<==      Total: 8
+2019-04-26 12:15:46 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:46 -==> Parameters: 
+2019-04-26 12:15:46 -<==      Total: 8
+2019-04-26 12:15:46 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:46 -==> Parameters: 
+2019-04-26 12:15:46 -<==      Total: 8
+2019-04-26 12:15:46 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:46 -==> Parameters: 
+2019-04-26 12:15:46 -<==      Total: 8
+2019-04-26 12:15:47 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:47 -==> Parameters: 
+2019-04-26 12:15:47 -<==      Total: 8
+2019-04-26 12:15:47 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:47 -==> Parameters: 
+2019-04-26 12:15:47 -<==      Total: 8
+2019-04-26 12:15:47 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:47 -==> Parameters: 
+2019-04-26 12:15:47 -<==      Total: 8
+2019-04-26 12:15:47 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:47 -==> Parameters: 
+2019-04-26 12:15:47 -<==      Total: 8
+2019-04-26 12:15:48 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:48 -==> Parameters: 
+2019-04-26 12:15:48 -<==      Total: 8
+2019-04-26 12:15:49 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:49 -==> Parameters: 
+2019-04-26 12:15:49 -<==      Total: 8
+2019-04-26 12:15:49 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:49 -==> Parameters: 
+2019-04-26 12:15:49 -<==      Total: 8
+2019-04-26 12:15:50 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:50 -==> Parameters: 
+2019-04-26 12:15:50 -<==      Total: 8
+2019-04-26 12:15:51 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:51 -==> Parameters: 
+2019-04-26 12:15:51 -<==      Total: 8
+2019-04-26 12:15:51 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:51 -==> Parameters: 
+2019-04-26 12:15:51 -<==      Total: 8
+2019-04-26 12:15:52 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:52 -==> Parameters: 
+2019-04-26 12:15:52 -<==      Total: 8
+2019-04-26 12:15:52 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:52 -==> Parameters: 
+2019-04-26 12:15:52 -<==      Total: 8
+2019-04-26 12:15:57 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:57 -==> Parameters: 
+2019-04-26 12:15:57 -<==      Total: 8
+2019-04-26 12:15:58 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:15:58 -==> Parameters: 
+2019-04-26 12:15:58 -<==      Total: 8
+2019-04-26 12:17:11 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 12:17:11 -==> Parameters: 
+2019-04-26 12:17:11 -<==      Total: 8
+2019-04-26 12:17:29 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:17:29 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:17:29 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:17:29 -<==      Total: 1
+2019-04-26 12:17:29 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:18:22 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:18:22 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:18:22 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:18:22 -<==      Total: 1
+2019-04-26 12:18:22 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:19:20 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 12:19:20 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 12:19:20 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 12:19:20 -<==      Total: 1
+2019-04-26 12:19:20 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 12:52:40 -Validating all active sessions...
+2019-04-26 12:52:40 -Finished session validation.  [4] sessions were stopped.
+2019-04-26 13:52:40 -Validating all active sessions...
+2019-04-26 13:52:40 -Finished session validation.  No sessions were stopped.
+2019-04-26 14:03:33 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 12116 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 14:03:33 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 14:03:33 -The following profiles are active: dev
+2019-04-26 14:03:37 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 14:03:37 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 14:03:37 -Finished Spring Data repository scanning in 51ms. Found 0 repository interfaces.
+2019-04-26 14:03:37 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$9d517971] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:03:38 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:03:38 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:03:38 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:03:38 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:03:38 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:03:38 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$eb63ad76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:03:38 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:03:38 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$e82000bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:03:38 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8c519ebf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:03:39 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 14:03:39 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 14:03:39 -Starting service [Tomcat]
+2019-04-26 14:03:39 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 14:03:39 -Initializing Spring embedded WebApplicationContext
+2019-04-26 14:03:39 -Root WebApplicationContext: initialization completed in 5654 ms
+2019-04-26 14:03:39 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 14:03:39 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 14:03:40 -{dataSource-1} inited
+2019-04-26 14:03:41 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a7005d, started on Fri Apr 26 14:03:34 GMT+08:00 2019
+2019-04-26 14:03:43 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 14:03:44 -Using default implementation for ThreadExecutor
+2019-04-26 14:03:44 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 14:03:44 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 14:03:44 -RAMJobStore initialized.
+2019-04-26 14:03:44 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 14:03:44 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 14:03:44 -Quartz scheduler version: 2.2.1
+2019-04-26 14:03:44 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@37fffef3
+2019-04-26 14:03:44 -Starting Quartz Scheduler now
+2019-04-26 14:03:44 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 14:03:44 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 14:03:44 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 14:03:44 -Started PlatformWebApplication in 11.693 seconds (JVM running for 13.816)
+2019-04-26 14:03:51 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 14:03:51 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 14:03:51 -Completed initialization in 15 ms
+2019-04-26 14:03:51 -Enabling session validation scheduler...
+2019-04-26 14:03:51 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 14:03:51 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 14:03:52 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 14:03:52 -<==      Total: 1
+2019-04-26 14:03:52 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 14:04:07 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 14:04:07 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 14:04:07 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 14:04:07 -<==      Total: 1
+2019-04-26 14:04:07 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 14:05:11 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 14:05:11 -==> Parameters: 
+2019-04-26 14:05:11 -<==      Total: 8
+2019-04-26 14:07:05 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 14:07:05 -==> Parameters: 
+2019-04-26 14:07:05 -<==      Total: 8
+2019-04-26 14:07:19 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 14:07:19 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 14:07:19 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 14:07:19 -<==      Total: 1
+2019-04-26 14:07:19 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 14:13:27 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 17784 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 14:13:27 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 14:13:27 -The following profiles are active: dev
+2019-04-26 14:13:28 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 14:13:28 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 14:13:28 -Finished Spring Data repository scanning in 54ms. Found 0 repository interfaces.
+2019-04-26 14:13:28 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$b372216a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:13:29 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:13:29 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:13:29 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:13:29 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:13:29 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:13:29 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$184556f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:13:29 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:13:29 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$fe40a8b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:13:29 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a27246b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 14:13:29 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 14:13:29 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 14:13:29 -Starting service [Tomcat]
+2019-04-26 14:13:29 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 14:13:30 -Initializing Spring embedded WebApplicationContext
+2019-04-26 14:13:30 -Root WebApplicationContext: initialization completed in 2852 ms
+2019-04-26 14:13:30 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 14:13:30 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 14:13:30 -{dataSource-1} inited
+2019-04-26 14:13:31 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3542162a, started on Fri Apr 26 14:13:27 GMT+08:00 2019
+2019-04-26 14:13:32 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 14:13:33 -Using default implementation for ThreadExecutor
+2019-04-26 14:13:33 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 14:13:33 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 14:13:33 -RAMJobStore initialized.
+2019-04-26 14:13:33 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 14:13:33 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 14:13:33 -Quartz scheduler version: 2.2.1
+2019-04-26 14:13:33 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@565a6af
+2019-04-26 14:13:33 -Starting Quartz Scheduler now
+2019-04-26 14:13:33 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 14:13:33 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 14:13:33 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 14:13:33 -Started PlatformWebApplication in 7.545 seconds (JVM running for 8.967)
+2019-04-26 14:13:40 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 14:13:40 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 14:13:40 -Completed initialization in 16 ms
+2019-04-26 14:13:40 -Enabling session validation scheduler...
+2019-04-26 14:13:40 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 14:13:40 -==> Parameters: 
+2019-04-26 14:13:40 -<==      Total: 8
+2019-04-26 14:14:02 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 14:14:02 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 14:14:03 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 14:14:03 -<==      Total: 1
+2019-04-26 14:14:03 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 14:14:08 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 14:14:08 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 14:14:08 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 14:14:08 -<==      Total: 1
+2019-04-26 14:14:08 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 14:14:34 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 14:14:34 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 14:14:34 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 14:14:34 -<==      Total: 1
+2019-04-26 14:14:34 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 15:06:18 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 11724 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 15:06:18 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 15:06:18 -The following profiles are active: dev
+2019-04-26 15:06:19 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 15:06:19 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 15:06:19 -Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2019-04-26 15:06:19 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$e7c816a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:06:20 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:06:20 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:06:20 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:06:20 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:06:20 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:06:20 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$35da4aa6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:06:20 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:06:20 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$32969deb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:06:20 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6c83bef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:06:21 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 15:06:21 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 15:06:21 -Starting service [Tomcat]
+2019-04-26 15:06:21 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 15:06:21 -Initializing Spring embedded WebApplicationContext
+2019-04-26 15:06:21 -Root WebApplicationContext: initialization completed in 2977 ms
+2019-04-26 15:06:21 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 15:06:21 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 15:06:22 -{dataSource-1} inited
+2019-04-26 15:06:22 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@52d239ba, started on Fri Apr 26 15:06:18 GMT+08:00 2019
+2019-04-26 15:06:24 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 15:06:25 -Using default implementation for ThreadExecutor
+2019-04-26 15:06:25 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 15:06:25 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 15:06:25 -RAMJobStore initialized.
+2019-04-26 15:06:25 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 15:06:25 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 15:06:25 -Quartz scheduler version: 2.2.1
+2019-04-26 15:06:25 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3c46e6f6
+2019-04-26 15:06:25 -Starting Quartz Scheduler now
+2019-04-26 15:06:25 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 15:06:25 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 15:06:25 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 15:06:25 -Started PlatformWebApplication in 7.911 seconds (JVM running for 9.412)
+2019-04-26 15:06:41 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 15:06:41 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 15:06:41 -Completed initialization in 15 ms
+2019-04-26 15:06:41 -Enabling session validation scheduler...
+2019-04-26 15:06:41 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 15:06:41 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 15:06:41 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 15:06:41 -<==      Total: 1
+2019-04-26 15:06:41 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 15:06:52 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 15:06:52 -==> Parameters: 
+2019-04-26 15:06:52 -<==      Total: 8
+2019-04-26 15:07:01 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 15:07:01 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 15:07:01 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 15:07:01 -<==      Total: 1
+2019-04-26 15:07:01 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 15:08:19 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 3864 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 15:08:19 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 15:08:19 -The following profiles are active: dev
+2019-04-26 15:08:20 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 15:08:20 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 15:08:20 -Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2019-04-26 15:08:20 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$71ca3a62] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:08:21 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:08:21 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:08:21 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:08:21 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:08:21 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:08:21 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$bfdc6e67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:08:21 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:08:21 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$bc98c1ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:08:21 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$60ca5fb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:08:22 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 15:08:22 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 15:08:22 -Starting service [Tomcat]
+2019-04-26 15:08:22 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 15:08:22 -Initializing Spring embedded WebApplicationContext
+2019-04-26 15:08:22 -Root WebApplicationContext: initialization completed in 2863 ms
+2019-04-26 15:08:22 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 15:08:22 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 15:08:23 -{dataSource-1} inited
+2019-04-26 15:08:23 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b7ff809, started on Fri Apr 26 15:08:19 GMT+08:00 2019
+2019-04-26 15:08:25 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 15:08:25 -Using default implementation for ThreadExecutor
+2019-04-26 15:08:25 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 15:08:25 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 15:08:25 -RAMJobStore initialized.
+2019-04-26 15:08:25 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 15:08:25 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 15:08:25 -Quartz scheduler version: 2.2.1
+2019-04-26 15:08:25 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@40cb95c1
+2019-04-26 15:08:26 -Starting Quartz Scheduler now
+2019-04-26 15:08:26 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 15:08:26 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 15:08:26 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 15:08:26 -Started PlatformWebApplication in 7.745 seconds (JVM running for 9.039)
+2019-04-26 15:08:30 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 15:08:30 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 15:08:30 -Completed initialization in 13 ms
+2019-04-26 15:08:30 -Enabling session validation scheduler...
+2019-04-26 15:09:14 -==>  Preparing: SELECT id,name,parent_id,is_node,level,order_num,remark,creater,create_time,updater,update_time FROM t_sector 
+2019-04-26 15:09:14 -==> Parameters: 
+2019-04-26 15:09:14 -<==      Total: 8
+2019-04-26 15:09:27 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 15:09:27 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 15:09:27 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 15:09:27 -<==      Total: 1
+2019-04-26 15:09:27 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 15:17:50 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 15:17:50 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 15:17:50 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 15:17:50 -<==      Total: 1
+2019-04-26 15:17:50 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 15:18:18 -==>  Preparing: SELECT COUNT(1) FROM t_system_user su WHERE su.is_delete = 0 AND su.type <> 0 AND su.type <> 1 
+2019-04-26 15:18:18 -==> Parameters: 
+2019-04-26 15:18:18 -==>  Preparing: SELECT su.id, su.user_name AS userName, CODE, su.type, (SELECT role_name FROM `t_system_role` WHERE role_id=(SELECT role_id FROM `t_user_role` WHERE user_id =su.id ) ) AS roleName, sex, sector, mobile, email, last_login_time AS lastLoginTime, STATUS, su.create_time AS createTime, su.remark FROM t_system_user su WHERE su.is_delete = 0 AND su.type <> 0 AND su.type <> 1 ORDER BY su.create_time DESC LIMIT ?,? 
+2019-04-26 15:18:18 -==> Parameters: 0(Long), 5(Long)
+2019-04-26 15:18:18 -<==      Total: 1
+2019-04-26 15:18:32 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 5772 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 15:18:32 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 15:18:32 -The following profiles are active: dev
+2019-04-26 15:18:33 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 15:18:33 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 15:18:33 -Finished Spring Data repository scanning in 52ms. Found 0 repository interfaces.
+2019-04-26 15:18:34 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$eb1415f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:18:34 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:18:34 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:18:34 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:18:34 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:18:34 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:18:34 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$392649f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:18:34 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:18:34 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$35e29d3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:18:34 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da143b41] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 15:18:35 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 15:18:35 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 15:18:35 -Starting service [Tomcat]
+2019-04-26 15:18:35 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 15:18:35 -Initializing Spring embedded WebApplicationContext
+2019-04-26 15:18:35 -Root WebApplicationContext: initialization completed in 2834 ms
+2019-04-26 15:18:35 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 15:18:35 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 15:18:36 -{dataSource-1} inited
+2019-04-26 15:18:36 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48a12036, started on Fri Apr 26 15:18:32 GMT+08:00 2019
+2019-04-26 15:18:38 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 15:18:39 -Using default implementation for ThreadExecutor
+2019-04-26 15:18:39 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 15:18:39 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 15:18:39 -RAMJobStore initialized.
+2019-04-26 15:18:39 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 15:18:39 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 15:18:39 -Quartz scheduler version: 2.2.1
+2019-04-26 15:18:39 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4ea43d4d
+2019-04-26 15:18:39 -Starting Quartz Scheduler now
+2019-04-26 15:18:39 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 15:18:39 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 15:18:39 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 15:18:39 -Started PlatformWebApplication in 7.708 seconds (JVM running for 9.358)
+2019-04-26 15:18:56 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 15:18:56 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 15:18:56 -Completed initialization in 17 ms
+2019-04-26 15:18:56 -Enabling session validation scheduler...
+2019-04-26 15:18:56 -==>  Preparing: SELECT COUNT(1) FROM t_system_user su WHERE su.is_delete = 0 AND su.type <> 0 AND su.type <> 1 
+2019-04-26 15:18:56 -==> Parameters: 
+2019-04-26 15:18:56 -==>  Preparing: SELECT su.id, su.user_name AS userName, CODE, su.type, (SELECT role_name FROM `t_system_role` WHERE role_id=(SELECT role_id FROM `t_user_role` WHERE user_id =su.id ) ) AS roleName, sex, (SELECT se.name FROM t_sector as se WHERE su.sector = se.id )sector, mobile, email, last_login_time AS lastLoginTime, STATUS, su.create_time AS createTime, su.remark FROM t_system_user su WHERE su.is_delete = 0 AND su.type <> 0 AND su.type <> 1 ORDER BY su.create_time DESC LIMIT ?,? 
+2019-04-26 15:18:56 -==> Parameters: 0(Long), 5(Long)
+2019-04-26 15:18:56 -<==      Total: 1
+2019-04-26 15:43:42 -==>  Preparing: SELECT COUNT(1) FROM t_system_role WHERE is_delete = 0 
+2019-04-26 15:43:42 -==> Parameters: 
+2019-04-26 15:43:42 -==>  Preparing: SELECT role_id AS roleId, role_name AS roleName, role_sign AS roleSign, status, remark, creater, create_time AS createTime, update_time AS updateTime, updater FROM t_system_role WHERE is_delete = 0 ORDER BY create_time DESC LIMIT ?,? 
+2019-04-26 15:43:42 -==> Parameters: 0(Long), 5(Long)
+2019-04-26 15:43:42 -<==      Total: 5
+2019-04-26 16:18:53 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 15136 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-26 16:18:53 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-26 16:18:53 -The following profiles are active: dev
+2019-04-26 16:18:56 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-26 16:18:56 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-26 16:18:56 -Finished Spring Data repository scanning in 51ms. Found 0 repository interfaces.
+2019-04-26 16:18:57 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$739321af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 16:18:57 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 16:18:57 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 16:18:57 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 16:18:57 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 16:18:57 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 16:18:57 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$c1a555b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 16:18:57 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 16:18:57 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$be61a8f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 16:18:58 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$629346fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-26 16:18:58 -Tomcat initialized with port(s): 8089 (http)
+2019-04-26 16:18:58 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-26 16:18:58 -Starting service [Tomcat]
+2019-04-26 16:18:58 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-26 16:18:59 -Initializing Spring embedded WebApplicationContext
+2019-04-26 16:18:59 -Root WebApplicationContext: initialization completed in 5312 ms
+2019-04-26 16:18:59 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-26 16:18:59 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-26 16:19:00 -{dataSource-1} inited
+2019-04-26 16:19:01 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67ab1c47, started on Fri Apr 26 16:18:53 GMT+08:00 2019
+2019-04-26 16:19:02 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-26 16:19:03 -Using default implementation for ThreadExecutor
+2019-04-26 16:19:03 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-26 16:19:03 -Quartz Scheduler v.2.2.1 created.
+2019-04-26 16:19:03 -RAMJobStore initialized.
+2019-04-26 16:19:03 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-26 16:19:03 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-26 16:19:03 -Quartz scheduler version: 2.2.1
+2019-04-26 16:19:03 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@33ccead
+2019-04-26 16:19:03 -Starting Quartz Scheduler now
+2019-04-26 16:19:03 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-26 16:19:03 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-26 16:19:03 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-26 16:19:03 -Started PlatformWebApplication in 11.364 seconds (JVM running for 13.168)
+2019-04-26 16:19:27 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-26 16:19:27 -Initializing Servlet 'dispatcherServlet'
+2019-04-26 16:19:27 -Completed initialization in 41 ms
+2019-04-26 16:19:27 -Enabling session validation scheduler...
+2019-04-26 16:20:02 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 16:20:02 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 16:20:03 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 16:20:03 -<==      Total: 1
+2019-04-26 16:20:03 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 16:22:09 ----------------- 执行 Shiro 凭证认证 ----------------------
+2019-04-26 16:22:09 -==>  Preparing: SELECT id,user_name,code,type,password,sex,sector,mobile,pic,email,last_login_time,login_num,status,creater,create_time,updater,update_time,deleter,remark,is_delete,delete_time FROM t_system_user WHERE code=? AND password=? AND is_delete=? 
+2019-04-26 16:22:09 -==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String), 0(Integer)
+2019-04-26 16:22:09 -<==      Total: 1
+2019-04-26 16:22:09 ----------------- Shiro 凭证认证成功 ----------------------
+2019-04-26 17:19:27 -Validating all active sessions...
+2019-04-26 17:19:27 -Finished session validation.  No sessions were stopped.

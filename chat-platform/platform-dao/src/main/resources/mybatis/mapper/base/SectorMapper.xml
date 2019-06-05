@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ufoai.platform.mapper.base.SectorMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ufoai.platform.entity.Sector">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="parent_id" property="parentId" />
+        <result column="is_node" property="isNode" />
+        <result column="level" property="level" />
+        <result column="order_num" property="orderNum" />
+        <result column="remark" property="remark" />
+        <result column="creater" property="creater" />
+        <result column="create_time" property="createTime" />
+        <result column="updater" property="updater" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+    <select id="getSectorUser" resultType="com.ufoai.platform.pojo.base.UserInfoRes">
+       SELECT id,userName,code,type,sex,mobile FROM  t_system_user  WHERE  sector = #{id}
+    </select>
+
+</mapper>

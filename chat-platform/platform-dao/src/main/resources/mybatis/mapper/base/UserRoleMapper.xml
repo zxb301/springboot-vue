@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ufoai.platform.mapper.base.UserRoleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ufoai.platform.entity.UserRole">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="role_id" property="roleId" />
+    </resultMap>
+
+    <!--插入新的用户角色-->
+    <insert id="addUserRole" parameterType="com.ufoai.platform.pojo.base.UserRoleRes">
+        insert into t_user_role  (user_id,role_id)  VALUES  (#{userId},#{roleId})
+    </insert>
+    <!--根据角色Id查询该角色对应有没有用户使用方便做角色删除-->
+    <select id="findByRoleId" parameterType="java.lang.Long" resultType="int">
+           SELECT COUNT(*) FROM `t_user_role` WHERE role_id =#{roleId}
+    </select>
+    </mapper>

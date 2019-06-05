@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/platform-web" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

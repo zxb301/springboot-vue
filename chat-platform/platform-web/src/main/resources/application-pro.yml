@@ -1,0 +1,58 @@
+spring:
+  datasource:
+#   数据源基本配置
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.92.87.165:3306/chat_platform?useSSL=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+#    url: jdbc:mysql://127.0.0.1:3306/notes?useSSL=true
+    type: com.alibaba.druid.pool.DruidDataSource
+#   数据源其他配置
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+#   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: stat,wall,slf4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  redis:
+#    host: 47.92.87.165
+    host: 127.0.0.1
+    port: 6379
+    timeout: 10000
+    database: 2
+    jedis:
+      pool:
+       max-idle: 8
+       # 连接池中的最小空闲连接
+       min-idle: 10
+       # 连接池最大连接数（使用负值表示没有限制）
+       max-active: 100
+       # 连接池最大阻塞等待时间（使用负值表示没有限制）
+       max-wait: -1
+    password: redis_ufoais
+
+logging:
+  level:
+    root: info
+    com.ufoai: debug
+server:
+   port: 8093
+#   port: 8089
+notes:
+  #上传文件保存路径
+  uploadPath: /mnt/files/upload/
+  #上传文件访问路径
+  staticAccessPath: /files/**
+
+   #临时视频
+  videodownload: /mnt/files/video/

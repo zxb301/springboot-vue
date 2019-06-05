@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ufoai.platform.mapper.base.RoleMenuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ufoai.platform.entity.RoleMenu">
+        <id column="id" property="id" />
+        <result column="role_id" property="roleId" />
+        <result column="menu_id" property="menuId" />
+    </resultMap>
+      <!--插入新的角色权限-->
+     <insert id="addRoleMenu" parameterType="com.ufoai.platform.pojo.base.RoleMenuRes">
+       insert into t_role_menu (role_id,menu_id) VALUES  (#{roleId},#{menuId})
+     </insert>
+
+    <!--根据角色id删除该角色对应的所有菜单-->
+    <delete id="delMenuByRoleId" parameterType="java.lang.Long">
+       DELETE FROM `t_role_menu` WHERE role_id=#{roleId}
+    </delete>
+    <!--根据roleId查询出所有的menuIds-->
+     <select id="findMenuIdByRoleId" parameterType="java.lang.Long" resultType="java.lang.String">
+       SELECT GROUP_CONCAT(menu_id) FROM `t_role_menu` WHERE role_id=#{roleId}
+     </select>
+
+</mapper>

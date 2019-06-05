@@ -1,0 +1,47 @@
+2019-04-28 16:58:41 -Starting PlatformWebApplication on LAPTOP-HF0QCG0J with PID 16156 (D:\work\space\platform165\chat-platform\platform-web\target\classes started by zxb in D:\work\space\platform165\chat-platform)
+2019-04-28 16:58:41 -Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-04-28 16:58:41 -The following profiles are active: dev
+2019-04-28 16:58:44 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-28 16:58:44 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-28 16:58:44 -Finished Spring Data repository scanning in 53ms. Found 0 repository interfaces.
+2019-04-28 16:58:45 -Bean 'shiroConfig' of type [com.ufoai.platform.config.ShiroConfig$$EnhancerBySpringCGLIB$$52d63034] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-28 16:58:45 -Bean 'myShiroRealm' of type [com.ufoai.platform.config.MyShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-28 16:58:45 -Bean 'redisManager' of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-28 16:58:45 -Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-28 16:58:45 -Bean 'sessionManager' of type [com.ufoai.platform.config.ShiroConfig$MySessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-28 16:58:45 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-28 16:58:45 -Bean 'threadConfig' of type [com.ufoai.platform.config.ThreadConfig$$EnhancerBySpringCGLIB$$a0e86439] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-28 16:58:45 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-28 16:58:45 -Bean 'redisConfig' of type [com.ufoai.platform.config.RedisConfig$$EnhancerBySpringCGLIB$$9da4b77e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-28 16:58:46 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$41d65582] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-28 16:58:46 -Tomcat initialized with port(s): 8089 (http)
+2019-04-28 16:58:46 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-04-28 16:58:46 -Starting service [Tomcat]
+2019-04-28 16:58:46 -Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-28 16:58:46 -Initializing Spring embedded WebApplicationContext
+2019-04-28 16:58:46 -Root WebApplicationContext: initialization completed in 5406 ms
+2019-04-28 16:58:47 -Servlet statViewServlet was not registered (possibly already registered?)
+2019-04-28 16:58:47 -Filter webStatFilter was not registered (possibly already registered?)
+2019-04-28 16:58:49 -{dataSource-1} inited
+2019-04-28 16:58:50 -ApplicationContext registed-->org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50caa560, started on Sun Apr 28 16:58:41 GMT+08:00 2019
+2019-04-28 16:58:51 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-28 16:58:52 -Using default implementation for ThreadExecutor
+2019-04-28 16:58:52 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-04-28 16:58:52 -Quartz Scheduler v.2.2.1 created.
+2019-04-28 16:58:52 -RAMJobStore initialized.
+2019-04-28 16:58:52 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-04-28 16:58:52 -Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-04-28 16:58:52 -Quartz scheduler version: 2.2.1
+2019-04-28 16:58:52 -JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6bb4cc0e
+2019-04-28 16:58:52 -Starting Quartz Scheduler now
+2019-04-28 16:58:52 -Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-04-28 16:58:52 -Starting ProtocolHandler ["http-nio-8089"]
+2019-04-28 16:58:52 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-04-28 16:58:52 -Started PlatformWebApplication in 12.973 seconds (JVM running for 15.319)

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ufoai.platform.mapper.base.CategoryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ufoai.platform.entity.Category">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="code" property="code" />
+        <result column="level" property="level" />
+        <result column="parent_id" property="parentId" />
+        <result column="indexs" property="indexs" />
+        <result column="is_leaf" property="isLeaf" />
+        <result column="creater" property="creater" />
+        <result column="create_time" property="createTime" />
+        <result column="updater" property="updater" />
+        <result column="update_time" property="updateTime" />
+        <result column="deleter" property="deleter" />
+        <result column="delete_time" property="deleteTime" />
+        <result column="remark" property="remark" />
+        <result column="is_delete" property="isDelete" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+        id, name, code, level, parent_id, indexs, is_leaf, creater, create_time, updater,
+        update_time, deleter, delete_time, remark, is_delete
+    </sql>
+    <select id="getCode" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select
+        <include refid="Base_Column_List" />
+        from t_category
+        <where>
+            is_delete = 0
+            and level = #{level}
+            <if test="parentId != null and parentId != '' ">
+                and parent_id = #{parentId}
+            </if>
+            order by id desc
+            limit 0,1;
+
+        </where>
+    </select>
+
+    <select id="selectDictionaryByName" parameterType="java.util.Map" resultType="java.lang.Long">
+        select count(id)
+        from t_category
+        <where>
+            is_delete = 0
+            <if test="name != null and name != '' ">
+                and name = #{name}
+            </if>
+            <if test="parentId != null and parentId != '' ">
+                and parent_id = #{parentId}
+            </if>
+            <if test="parentId == null or parentId == '' ">
+                and parent_id = 0
+            </if>
+            <if test="id != null and id != ''">
+                AND
+                id &lt;&gt; #{id}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectCategoryList" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List" />
+        from t_category
+        <where>
+            is_delete = 0
+
+            <if test="categoryType != null and categoryType != '' ">
+                and  parent_id &lt;&gt; 0 and code like '${categoryType}%'
+            </if>
+        </where>
+    </select>
+
+    <select id="selectERMcodeList"  resultType="com.ufoai.platform.pojo.base.ERMCategory" parameterType="java.lang.String">
+        select
+        id, name,code
+        from t_category
+        <where>
+            is_delete = 1
+            <if test="code != null and code != '' ">
+                and  parent_id &lt;&gt; 0 and code like '${code}%'
+            </if>
+        </where>
+    </select>
+</mapper>

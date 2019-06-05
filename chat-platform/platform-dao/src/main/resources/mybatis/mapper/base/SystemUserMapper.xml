@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ufoai.platform.mapper.base.SystemUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ufoai.platform.entity.SystemUser">
+        <id column="id" property="id"/>
+        <result column="user_name" property="userName"/>
+        <result column="code" property="code"/>
+        <result column="type" property="type"/>
+        <result column="password" property="password"/>
+        <result column="sex" property="sex"/>
+        <result column="sector" property="sector"/>
+        <result column="mobile" property="mobile"/>
+        <result column="email" property="email"/>
+        <result column="last_login_time" property="lastLoginTime"/>
+        <result column="login_num" property="loginNum"/>
+        <result column="status" property="status"/>
+        <result column="creater" property="creater"/>
+        <result column="create_time" property="createTime"/>
+        <result column="updater" property="updater"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="deleter" property="deleter"/>
+        <result column="remark" property="remark"/>
+        <result column="is_delete" property="isDelete"/>
+        <result column="delete_time" property="deleteTime"/>
+    </resultMap>
+    <!--查询按钮权限-超级管理员-->
+    <select id="selectAllPermissions" resultType="java.lang.String">
+        SELECT DISTINCT
+        perms
+        FROM
+        t_system_menu
+        WHERE
+        is_delete = 0
+    </select>
+    <!--查询按钮权限-普通用户-->
+    <select id="selectPermissionsByUser" resultType="java.lang.String" parameterType="java.lang.Long">
+        SELECT DISTINCT
+        m.perms
+        FROM
+        t_system_menu m
+        LEFT JOIN t_role_menu rm ON m.menu_id = rm.menu_id
+        LEFT JOIN t_user_role ur ON rm.role_id = ur.role_id
+        WHERE
+        ur.user_id = #{userId}
+
+    </select>
+    <!--删除用户-->
+    <update id="deleteUserById" parameterType="java.util.Map">
+        UPDATE t_system_user
+        SET is_delete = 1,
+        deleter = #{delId} ,
+        delete_time = #{delTime}
+
+        WHERE
+        id = #{id}
+    </update>
+    <!--查询权限树数据，用户拥有的权限（回显选中的节点）-->
+    <select id="queryUserAuth" resultType="java.lang.Long" parameterType="java.lang.Long">
+        SELECT DISTINCT
+        sm.menu_id
+        FROM
+        t_system_menu sm
+        LEFT JOIN t_user_menu um ON sm.menu_id = um.menu_id
+        WHERE
+        um.user_id =  #{userId}
+    </select>
+    <!--查询权限树数据，用户拥有的权限（回显打开的节点）-->
+    <select id="queryUserAuthOpen" resultType="java.lang.Long" parameterType="java.lang.Long">
+        SELECT DISTINCT
+        sm.parent_id
+        FROM
+        t_system_menu sm
+        LEFT JOIN t_user_menu um ON sm.menu_id = um.menu_id
+        WHERE
+        um.user_id =  #{userId}
+    </select>
+
+    <delete id="deleteUserAuth" parameterType="java.lang.Long">
+        DELETE  FROM t_user_menu WHERE user_id = #{userId};
+    </delete>
+    <!--添加用户权限-->
+    <insert id="addUserAuth">
+        insert into t_user_menu ( user_id, menu_id) values
+        <foreach collection="ids" item="item" index="index" separator=",">
+            (#{id,jdbcType=BIGINT},
+            #{item,jdbcType=BIGINT})
+        </foreach>
+    </insert>
+    <!--查询用户列表-->
+    <select id="selectUserList" resultType="com.ufoai.platform.pojo.base.UserListRes" parameterType="java.util.Map">
+        SELECT
+        su.id,
+        su.user_name AS userName,
+        CODE,
+        su.type,
+        (SELECT role_name FROM `t_system_role` WHERE role_id=(SELECT role_id FROM `t_user_role` WHERE user_id =su.id ) )
+        AS roleName,
+        sex,
+        (SELECT se.name  FROM  t_sector as se WHERE su.sector = se.id )sector,
+        mobile,
+        email,
+        last_login_time AS lastLoginTime,
+        STATUS,
+        su.create_time AS createTime,
+        su.remark
+        FROM
+        t_system_user su
+        <where>
+            su.is_delete = 0
+            AND su.type &lt;&gt; 0
+            AND su.type &lt;&gt; 1
+            <if test="map.userName!=null and map.userName!=''">
+                AND su.user_name like CONCAT('%',#{map.userName},'%')
+            </if>
+
+        </where>
+        ORDER BY
+        su.create_time DESC
+    </select>
+    <!--用户列表权限名称查询-->
+    <select id="selectUserAuthName" resultType="java.lang.String">
+        SELECT
+        CONCAT_WS( ':', mainName, GROUP_CONCAT( child.NAME SEPARATOR '、' ) )
+        FROM
+        (
+        SELECT
+        sm.menu_id AS menuId,
+        sm.NAME AS mainName
+        FROM
+        t_system_menu sm
+        LEFT JOIN t_user_menu um ON sm.menu_id = um.menu_id
+        WHERE
+        um.user_id = #{userId}
+        AND sm.type = 1
+        UNION
+        SELECT
+        ssm.menu_id AS menuId,
+        ssm.NAME AS mainName
+        FROM
+        t_system_menu AS ssm
+        WHERE
+        ssm.type =1 and
+        ssm.menu_id in (
+        SELECT DISTINCT
+        sm.parent_id
+        FROM
+        t_user_menu um
+        LEFT JOIN t_system_menu sm ON sm.menu_id = um.menu_id
+        WHERE
+        um.user_id = #{id}
+        AND sm.is_delete = 0
+        AND parent_id &lt;&gt; 0
+        )
+        ) AS main
+        LEFT JOIN (
+        SELECT
+        smm.*
+        FROM
+        t_system_menu smm
+        LEFT JOIN t_user_menu umm ON smm.menu_id = umm.menu_id
+        WHERE
+        umm.user_id = #{userId}
+        AND smm.type = 2
+        ) AS child ON menuId = child.parent_id
+        GROUP BY
+        menuId
+    </select>
+
+    <!--根据用户id查询出对应的角色-->
+    <select id="findRoleNameByUserId" parameterType="java.lang.Long" resultType="java.lang.String">
+      SELECT role_name FROM `t_system_role` WHERE role_id IN(SELECT  role_id  FROM `t_user_role` WHERE user_id=#{userId})
+   </select>
+
+    <!--新增一个用户-->
+    <insert id="addUser" parameterType="com.ufoai.platform.pojo.base.UserListRes" useGeneratedKeys="true"
+            keyProperty="id" keyColumn="id">
+        insert into t_system_user(user_name,code,password,sex,sector,status,creater,create_time,is_delete,type)
+        VALUES(#{userName},#{code},#{password},#{sex},#{sector},0,#{creater},#{createTime},0,#{type})
+    </insert>
+    <!--修改一个用户-->
+    <update id="updateUsers" parameterType="com.ufoai.platform.pojo.base.UserListRes">
+        UPDATE t_system_user
+        <set>
+            <if test="userName!=null and userName!=''">
+                user_name=#{userName},
+            </if>
+            <if test="code!=null and code!=''">
+                code=#{code},
+            </if>
+            <if test="sex!=null and sex!=''">
+                sex=#{sex},
+            </if>
+
+            <if test="sector!=null and sector!=''">
+                sector=#{sector},
+            </if>
+            <if test="updateTime!=null and updateTime!=''">
+                update_time=#{updateTime},
+            </if>
+            <if test="updater!=null and updater!=''">
+                updater=#{updater}
+            </if>
+        </set>
+        WHERE id=#{id}
+    </update>
+    <!--根据用户id查询出对应的该用户的所有信息-->
+    <select id="findUserById" parameterType="java.lang.Long" resultType="com.ufoai.platform.pojo.base.UserListRes">
+      select id, user_name,code,type, (SELECT role_id FROM `t_user_role` WHERE user_id =su.id )
+                 AS roleId,sex,sector,mobile,email,create_time  from `t_system_user`  su where id=#{id}
+    </select>
+    <!--用户登录进来根据用户id查询出对应的用户权限-->
+    <select id="findUserAllAuth" resultType="com.ufoai.platform.pojo.base.AuthListRes" parameterType="java.util.Map">
+       SELECT * FROM `t_system_menu` WHERE menu_id IN   (SELECT rm.menu_id FROM t_system_role sr, t_role_menu rm  WHERE sr.role_id =rm.role_id AND rm.role_id IN ( SELECT role_id FROM t_user_role WHERE user_id =#{userId}) )
+   AND is_delete =0 AND TYPE=1 AND parent_id=#{parentId}
+     </select>
+</mapper>

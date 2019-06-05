@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ufoai.platform.mapper.base.SystemMenuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ufoai.platform.entity.SystemMenu">
+        <id column="menu_id" property="menuId" />
+        <result column="parent_id" property="parentId" />
+        <result column="name" property="name" />
+        <result column="url" property="url" />
+        <result column="perms" property="perms" />
+        <result column="type" property="type" />
+        <result column="icon" property="icon" />
+        <result column="order_num" property="orderNum" />
+        <result column="is_node" property="isNode" />
+        <result column="is_show" property="isShow" />
+        <result column="level" property="level" />
+        <result column="remark" property="remark" />
+        <result column="creater" property="creater" />
+        <result column="updater" property="updater" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="is_delete" property="isDelete" />
+    </resultMap>
+  <!--  <select id="selectMenuListByUser" resultMap="BaseResultMap" parameterType="com.ufoai.platform.entity.SystemUser">
+           SELECT sm.* FROM `t_system_menu` AS sm  RIGHT JOIN    (SELECT rm.menu_id FROM t_system_role sr, t_role_menu rm
+            WHERE sr.role_id =rm.role_id AND rm.role_id =( SELECT role_id FROM t_user_role WHERE user_id =#{id})) AS ssm
+            ON ssm.menu_id=sm.menu_id     WHERE
+          sm.is_delete =0 AND sm.TYPE=1 AND sm.parent_id &lt;&gt;0
+    </select>-->
+
+
+
+   <select id="selectMenuListByUser" resultMap="BaseResultMap" parameterType="com.ufoai.platform.entity.SystemUser">
+        SELECT
+        sm.*
+        FROM
+        t_user_role um
+        LEFT JOIN  t_role_menu rm  on um.role_id = rm.role_id
+        LEFT JOIN t_system_menu sm ON sm.menu_id = rm.menu_id
+        WHERE
+        um.user_id = #{id}
+        AND sm.is_delete = 0
+        AND   sm.type = 1  UNION
+        SELECT
+        ssm.*
+        FROM
+        t_system_menu AS ssm
+        WHERE
+        ssm.type =0 and
+        ssm.menu_id in (
+        SELECT DISTINCT
+        sm.parent_id
+        FROM
+        t_user_role um
+        LEFT JOIN  t_role_menu rm  on um.role_id = rm.role_id
+        LEFT JOIN t_system_menu sm ON sm.menu_id = rm.menu_id
+        WHERE
+        um.user_id = #{id}
+        AND sm.is_delete = 0
+        AND parent_id &lt;&gt; 0
+        )
+        order by order_num,menu_id
+   </select>
+
+</mapper>
